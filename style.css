@@ -43,5 +43,16 @@ body{
     height: 60px;
     margin-right: 16px;
     font-size: 18px;
+}
 
+.search button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    outline: 0;
+    border-radius: 100%;
+    cursor: pointer;
 }
