@@ -39,11 +39,24 @@ async function weatherApi(city) {
         else if(data.weather[0].main == "Snow"){
             icon.src = "assets/Snow.png";
         }
-        document.querySelector(".weather").style.display = "block";  
+        document.querySelector(".weather").style.display = "block";
+        document.querySelector(".error").style.display = "none";
+        searchInput.value = "";
+
     }
 }
 
-searchBtn.addEventListener("click", () => {
+function searchWeather() {
     let cityName = searchInput.value;
     weatherApi(cityName)
+}
+
+searchBtn.addEventListener("click", ()=>{
+    searchWeather();
+})
+
+searchInput.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter") {
+        searchWeather();
+    }
 })
