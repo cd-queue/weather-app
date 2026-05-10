@@ -15,6 +15,18 @@ It shows real-time weather data using the OpenWeather API.
 - JavaScript
 - OpenWeather API
 
+## 📁 Project Structure
+
+```bash
+weather-app/
+│
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+└── README.md
+```
+
 ## ▶️ Run Project
 1. clone the project
 2. Open `index.html` in browser
